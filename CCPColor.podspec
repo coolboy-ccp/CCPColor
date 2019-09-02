@@ -28,7 +28,7 @@ Pod::Spec.new do |spec|
 rgba, hex, uiimage-> color; color->rgba, uiimage
                    DESC
 
-  spec.homepage     = "http://EXAMPLE/CCPColor"
+  spec.homepage     = "https://github.com/coolboy-ccp/CCPColor"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -39,8 +39,8 @@ rgba, hex, uiimage-> color; color->rgba, uiimage
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      = "MIT (example)"
-  # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+#spec.license      = "MIT (example)"
+   spec.license      = { :type => "MIT", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -53,7 +53,7 @@ rgba, hex, uiimage-> color; color->rgba, uiimage
   #  profile URL.
   #
 
-  spec.author             = { "clobotics_ccp" => "" }
+  spec.author             = "coolboy_ccp"
   # Or just: spec.author    = "clobotics_ccp"
   # spec.authors            = { "clobotics_ccp" => "" }
   # spec.social_media_url   = "https://twitter.com/clobotics_ccp"
@@ -65,10 +65,10 @@ rgba, hex, uiimage-> color; color->rgba, uiimage
   #
 
   # spec.platform     = :ios
-  # spec.platform     = :ios, "5.0"
+   spec.platform     = :ios, "10.0"
 
   #  When using multiple platforms
-  # spec.ios.deployment_target = "5.0"
+   spec.ios.deployment_target = "10.0"
   # spec.osx.deployment_target = "10.7"
   # spec.watchos.deployment_target = "2.0"
   # spec.tvos.deployment_target = "9.0"
@@ -80,7 +80,7 @@ rgba, hex, uiimage-> color; color->rgba, uiimage
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "http://EXAMPLE/CCPColor.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/coolboy-ccp/CCPColor.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,8 +91,9 @@ rgba, hex, uiimage-> color; color->rgba, uiimage
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
-  spec.exclude_files = "Classes/Exclude"
+  spec.source_files  = "CCPColor/*.swift"
+spec.swift_version = "5.0"
+#spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
 
