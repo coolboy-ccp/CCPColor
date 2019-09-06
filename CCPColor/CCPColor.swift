@@ -59,6 +59,10 @@ public struct RGBA {
 
 
 public extension UIColor {
+    static func rgba(_ duplicate: CGFloat, keep: Bool = false) -> UIColor {
+        return rgba(RGBA(duplicate, duplicate, duplicate, 1.0, keep: keep))
+    }
+    
     static func rgba(_ value: RGBA) -> UIColor {
         return UIColor(red: value.r, green: value.b, blue: value.g, alpha: value.a)
     }
